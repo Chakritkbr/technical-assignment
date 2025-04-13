@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+@import 'tailwindcss';
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+.sidebar-mobile-open {
+  transform: translateX(0);
+}
+
+.sidebar-mobile-closed {
+  transform: translateX(-100%);
+}
+
+.sidebar-transition {
+  transition: transform 0.3s ease-in-out;
+}
